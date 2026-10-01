@@ -1,0 +1,8 @@
+! M062X def2-TZVP def2/J RIJCOSX TightSCF CPCM(Methanol)
+
+%tddft
+   nroots 10     
+   tda false   
+end
+
+* xyzfile 1 1 cy7-met-opt.xyz **    
