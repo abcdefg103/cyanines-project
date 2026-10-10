@@ -1,130 +1,8 @@
 # Analysis of All Performed Cyanine Computations 
 
-**Table of Contents:**
+## Few Remarks:
 
-[**Few Remarks:	4**](#few-remarks:)
-
-[1 \- Cy3 (Simple):	5](#1---cy3-\(simple\):)
-
-[\#1: Cy3 (N-H) B3LYP Excited State Calculations, No Gem-Dimethyls, No Substituents, Default Gas-Phase State	5](##1:-cy3-\(n-h\)-b3lyp-excited-state-calculations,-no-gem-dimethyls,-no-substituents,-default-gas-phase-state)
-
-[\#2: Cy3 (N-H) B3LYP Excited State Calculations, No Gem-Dimethyls, No Substituents, CPCM (Water) Solvent	6](##2:-cy3-\(n-h\)-b3lyp-excited-state-calculations,-no-gem-dimethyls,-no-substituents,-cpcm-\(water\)-solvent)
-
-[\#3: Cy3 (N-H) G3LYP Excited State Calculations, No Gem-Dimethyls, No Substituents, CPCM (Water) Solvent	7](##3:-cy3-\(n-h\)-g3lyp-excited-state-calculations,-no-gem-dimethyls,-no-substituents,-cpcm-\(water\)-solvent)
-
-[\#4: Cy3 (N-H) O3LYP Excited State Calculations, No Gem-Dimethyls, No Substituents, CPCM (Water) Solvent	8](##4:-cy3-\(n-h\)-o3lyp-excited-state-calculations,-no-gem-dimethyls,-no-substituents,-cpcm-\(water\)-solvent)
-
-[2 \- Cy3 (Methyl Substituents, CPCM Water):	9](#2---cy3-\(methyl-substituents,-cpcm-water\):)
-
-[\#5: Cy3 (N-CH3) B3LYP Excited State Calculations, Methyl Substituent, CPCM (Water) Solvent	9](##5:-cy3-\(n-ch3\)-b3lyp-excited-state-calculations,-methyl-substituent,-cpcm-\(water\)-solvent)
-
-[\#6: Cy3 (N-CH3) wB97X Excited State Calculations, Methyl Substituent, CPCM (Water) Solvent	12](##6:-cy3-\(n-ch3\)-wb97x-excited-state-calculations,-methyl-substituent,-cpcm-\(water\)-solvent)
-
-[\#7: Cy3 (N-CH3) PBE0 Excited State Calculations, Methyl Substituent, CPCM (Water) Solvent	12](##7:-cy3-\(n-ch3\)-pbe0-excited-state-calculations,-methyl-substituent,-cpcm-\(water\)-solvent)
-
-[\#8: Cy3 (N-CH3) M062X Excited State Calculations, Methyl Substituent, CPCM (Water) Solvent	13](##8:-cy3-\(n-ch3\)-m062x-excited-state-calculations,-methyl-substituent,-cpcm-\(water\)-solvent)
-
-[\#9: Cy3 (N-CH3) BLYP Excited State Calculations, Methyl Substituent, CPCM (Water) Solvent	14](##9:-cy3-\(n-ch3\)-blyp-excited-state-calculations,-methyl-substituent,-cpcm-\(water\)-solvent)
-
-[3 \- Cy3 (Methyl Substituents, CPCM Methanol):	15](#3---cy3-\(methyl-substituents,-cpcm-methanol\):)
-
-[\#10: Cy3 (N-CH3) B3LYP Excited State Calculations, Methyl Substituent, CPCM (Methanol) Solvent	15](##10:-cy3-\(n-ch3\)-b3lyp-excited-state-calculations,-methyl-substituent,-cpcm-\(methanol\)-solvent)
-
-[\#11: Cy3 (N-CH3) wB97X Excited State Calculations, Methyl Substituent, CPCM (Methanol) Solvent	17](##11:-cy3-\(n-ch3\)-wb97x-excited-state-calculations,-methyl-substituent,-cpcm-\(methanol\)-solvent)
-
-[\#12: Cy3 (N-CH3) PBE0 Excited State Calculations, Methyl Substituent, CPCM (Methanol) Solvent	18](##12:-cy3-\(n-ch3\)-pbe0-excited-state-calculations,-methyl-substituent,-cpcm-\(methanol\)-solvent)
-
-[\#13: Cy3 (N-CH3) M062X Excited State Calculations, Methyl Substituent, CPCM (Methanol) Solvent	18](##13:-cy3-\(n-ch3\)-m062x-excited-state-calculations,-methyl-substituent,-cpcm-\(methanol\)-solvent)
-
-[\#14: Cy3 (N-CH3) BLYP Excited State Calculations, Methyl Substituent, CPCM (Methanol) Solvent	19](##14:-cy3-\(n-ch3\)-blyp-excited-state-calculations,-methyl-substituent,-cpcm-\(methanol\)-solvent)
-
-[**4 \- Cy5 (Methyl Substituents, Optimized with CPCM Water and Excitation States Calculated with CPCM Methanol):	20**](#4---cy5-\(methyl-substituents,-optimized-with-cpcm-water-and-excitation-states-calculated-with-cpcm-methanol\):)
-
-[**\#15: Cy5 (N-CH3) B3LYP Excited State Calculations, Methyl Substituent, CPCM (Methanol) Solvent	20**](##15:-cy5-\(n-ch3\)-b3lyp-excited-state-calculations,-methyl-substituent,-cpcm-\(methanol\)-solvent)
-
-[**\#16: Cy5 (N-CH3) wB97X Excited State Calculations, Methyl Substituent, CPCM (Methanol) Solvent	22**](##16:-cy5-\(n-ch3\)-wb97x-excited-state-calculations,-methyl-substituent,-cpcm-\(methanol\)-solvent)
-
-[**\#17: Cy5 (N-CH3) PBE0 Excited State Calculations, Methyl Substituent, CPCM (Methanol) Solvent	23**](##17:-cy5-\(n-ch3\)-pbe0-excited-state-calculations,-methyl-substituent,-cpcm-\(methanol\)-solvent)
-
-[**\#18: Cy5 (N-CH3) M062X Excited State Calculations, Methyl Substituent, CPCM (Methanol) Solvent	24**](##18:-cy5-\(n-ch3\)-m062x-excited-state-calculations,-methyl-substituent,-cpcm-\(methanol\)-solvent)
-
-[**\#19: Cy5 (N-CH3) BLYP Excited State Calculations, Methyl Substituent, CPCM (Methanol) Solvent	25**](##19:-cy5-\(n-ch3\)-blyp-excited-state-calculations,-methyl-substituent,-cpcm-\(methanol\)-solvent)
-
-[**5 \- Cy7 (Methyl Substituents, Optimized with CPCM Water and Excitation States Calculated with CPCM Methanol):	26**](#5---cy7-\(methyl-substituents,-optimized-with-cpcm-water-and-excitation-states-calculated-with-cpcm-methanol\):)
-
-[**\#20: Cy7 (N-CH3) B3LYP Excited State Calculations, Methyl Substituent, CPCM (Methanol) Solvent	26**](##20:-cy7-\(n-ch3\)-b3lyp-excited-state-calculations,-methyl-substituent,-cpcm-\(methanol\)-solvent)
-
-[**\#21: Cy7 (N-CH3) wB97X Excited State Calculations, Methyl Substituent, CPCM (Methanol) Solvent	28**](##21:-cy7-\(n-ch3\)-wb97x-excited-state-calculations,-methyl-substituent,-cpcm-\(methanol\)-solvent)
-
-[**\#22: Cy7 (N-CH3) PBE0 Excited State Calculations, Methyl Substituent, CPCM (Methanol) Solvent	29**](##22:-cy7-\(n-ch3\)-pbe0-excited-state-calculations,-methyl-substituent,-cpcm-\(methanol\)-solvent)
-
-[**\#23: Cy7 (N-CH3) M062X Excited State Calculations, Methyl Substituent, CPCM (Methanol) Solvent	30**](##23:-cy7-\(n-ch3\)-m062x-excited-state-calculations,-methyl-substituent,-cpcm-\(methanol\)-solvent)
-
-[**\#24: Cy7 (N-CH3) BLYP Excited State Calculations, Methyl Substituent, CPCM (Methanol) Solvent	30**](##24:-cy7-\(n-ch3\)-blyp-excited-state-calculations,-methyl-substituent,-cpcm-\(methanol\)-solvent)
-
-[**6 \- Cy3 (Methyl Substituents, Optimized with CPCM Water and Excitation States Calculated with CPCM Methanol):	31**](#6---cy3-\(methyl-substituents,-optimized-with-cpcm-water-and-excitation-states-calculated-with-cpcm-methanol\):)
-
-[**\#25: Cy3 (N-CH3) B3LYP Excited State Calculations, Methyl Substituent, CPCM (Water) Opt \+ CPCM (Methanol) Solvent	31**](##25:-cy3-\(n-ch3\)-b3lyp-excited-state-calculations,-methyl-substituent,-cpcm-\(water\)-opt-+-cpcm-\(methanol\)-solvent)
-
-[**\#26: Cy3 (N-CH3) wB97X Excited State Calculations, Methyl Substituent, CPCM (Water) Opt \+ CPCM (Methanol) Solvent	32**](##26:-cy3-\(n-ch3\)-wb97x-excited-state-calculations,-methyl-substituent,-cpcm-\(water\)-opt-+-cpcm-\(methanol\)-solvent)
-
-[**\#27: Cy3 (N-CH3) PBE0 Excited State Calculations, Methyl Substituent, CPCM (Water) Opt \+ CPCM (Methanol) Solvent	33**](##27:-cy3-\(n-ch3\)-pbe0-excited-state-calculations,-methyl-substituent,-cpcm-\(water\)-opt-+-cpcm-\(methanol\)-solvent)
-
-[**\#28: Cy3 (N-CH3) M062X Excited State Calculations, Methyl Substituent, CPCM (Water) Opt \+ CPCM (Methanol) Solvent	33**](##28:-cy3-\(n-ch3\)-m062x-excited-state-calculations,-methyl-substituent,-cpcm-\(water\)-opt-+-cpcm-\(methanol\)-solvent)
-
-[**\#29: Cy3 (N-CH3) BLYP Excited State Calculations, Methyl Substituent, CPCM (Water) Opt \+ CPCM (Methanol) Solvent	34**](##29:-cy3-\(n-ch3\)-blyp-excited-state-calculations,-methyl-substituent,-cpcm-\(water\)-opt-+-cpcm-\(methanol\)-solvent)
-
-[7 \- Cy9 (Methyl Substituents, Optimized with CPCM Water and Excitation States Calculated with CPCM Methanol):	35](#7---cy9-\(methyl-substituents,-optimized-with-cpcm-water-and-excitation-states-calculated-with-cpcm-methanol\):)
-
-[\#30: Cy9 (N-CH3) B3LYP Excited State Calculations, Methyl Substituent, CPCM (Methanol) Solvent	35](##30:-cy9-\(n-ch3\)-b3lyp-excited-state-calculations,-methyl-substituent,-cpcm-\(methanol\)-solvent)
-
-[\#31: Cy9 (N-CH3) wB97X Excited State Calculations, Methyl Substituent, CPCM (Methanol) Solvent	38](##31:-cy9-\(n-ch3\)-wb97x-excited-state-calculations,-methyl-substituent,-cpcm-\(methanol\)-solvent)
-
-[\#32: Cy9 (N-CH3) PBE0 Excited State Calculations, Methyl Substituent, CPCM (Methanol) Solvent	38](##32:-cy9-\(n-ch3\)-pbe0-excited-state-calculations,-methyl-substituent,-cpcm-\(methanol\)-solvent)
-
-[\#33: Cy9 (N-CH3) M062X Excited State Calculations, Methyl Substituent, CPCM (Methanol) Solvent	39](##33:-cy9-\(n-ch3\)-m062x-excited-state-calculations,-methyl-substituent,-cpcm-\(methanol\)-solvent)
-
-[\#34: Cy9 (N-CH3) BLYP Excited State Calculations, Methyl Substituent, CPCM (Methanol) Solvent	40](##34:-cy9-\(n-ch3\)-blyp-excited-state-calculations,-methyl-substituent,-cpcm-\(methanol\)-solvent)
-
-[8 \- Cy11 (Methyl Substituents, Optimized with CPCM Water and Excitation States Calculated with CPCM Methanol):	41](#8---cy11-\(methyl-substituents,-optimized-with-cpcm-water-and-excitation-states-calculated-with-cpcm-methanol\):)
-
-[\#35: Cy11 (N-CH3) B3LYP Excited State Calculations, Methyl Substituent, CPCM (Methanol) Solvent	41](##35:-cy11-\(n-ch3\)-b3lyp-excited-state-calculations,-methyl-substituent,-cpcm-\(methanol\)-solvent)
-
-[\#36: Cy11 (N-CH3) wB97X Excited State Calculations, Methyl Substituent, CPCM (Methanol) Solvent	43](##36:-cy11-\(n-ch3\)-wb97x-excited-state-calculations,-methyl-substituent,-cpcm-\(methanol\)-solvent)
-
-[\#37: Cy11 (N-CH3) PBE0 Excited State Calculations, Methyl Substituent, CPCM (Methanol) Solvent	44](##37:-cy11-\(n-ch3\)-pbe0-excited-state-calculations,-methyl-substituent,-cpcm-\(methanol\)-solvent)
-
-[\#38: Cy11 (N-CH3) M062X Excited State Calculations, Methyl Substituent, CPCM (Methanol) Solvent	45](##38:-cy11-\(n-ch3\)-m062x-excited-state-calculations,-methyl-substituent,-cpcm-\(methanol\)-solvent)
-
-[\#39: Cy11 (N-CH3) BLYP Excited State Calculations, Methyl Substituent, CPCM (Methanol) Solvent	46](##39:-cy11-\(n-ch3\)-blyp-excited-state-calculations,-methyl-substituent,-cpcm-\(methanol\)-solvent)
-
-[**9 \- Cy9 REDO (Methyl Substituents, Optimized with CPCM Water and Excitation States Calculated with CPCM Methanol, ALL-TRANS):	47**](#9---cy9-redo-\(methyl-substituents,-optimized-with-cpcm-water-and-excitation-states-calculated-with-cpcm-methanol,-all-trans\):)
-
-[**\#40: Cy9 (N-CH3) B3LYP Excited State Calculations, Methyl Substituent, CPCM (Methanol) Solvent	47**](##40:-cy9-\(n-ch3\)-b3lyp-excited-state-calculations,-methyl-substituent,-cpcm-\(methanol\)-solvent)
-
-[**\#41: Cy9 (N-CH3) wB97X Excited State Calculations, Methyl Substituent, CPCM (Methanol) Solvent	49**](##41:-cy9-\(n-ch3\)-wb97x-excited-state-calculations,-methyl-substituent,-cpcm-\(methanol\)-solvent)
-
-[**\#42: Cy9 (N-CH3) PBE0 Excited State Calculations, Methyl Substituent, CPCM (Methanol) Solvent	50**](##42:-cy9-\(n-ch3\)-pbe0-excited-state-calculations,-methyl-substituent,-cpcm-\(methanol\)-solvent)
-
-[**\#43: Cy9 (N-CH3) M062X Excited State Calculations, Methyl Substituent, CPCM (Methanol) Solvent	51**](##43:-cy9-\(n-ch3\)-m062x-excited-state-calculations,-methyl-substituent,-cpcm-\(methanol\)-solvent)
-
-[**\#44: Cy9 (N-CH3) BLYP Excited State Calculations, Methyl Substituent, CPCM (Methanol) Solvent	52**](##44:-cy9-\(n-ch3\)-blyp-excited-state-calculations,-methyl-substituent,-cpcm-\(methanol\)-solvent)
-
-[**10 \- Cy11 REDO (Methyl Substituents, Optimized with CPCM Water and Excitation States Calculated with CPCM Methanol, ALL-TRANS):	53**](#10---cy11-redo-\(methyl-substituents,-optimized-with-cpcm-water-and-excitation-states-calculated-with-cpcm-methanol,-all-trans\):)
-
-[**\#45: Cy11 (N-CH3) B3LYP Excited State Calculations, Methyl Substituent, CPCM (Methanol) Solvent	53**](##45:-cy11-\(n-ch3\)-b3lyp-excited-state-calculations,-methyl-substituent,-cpcm-\(methanol\)-solvent)
-
-[**\#46: Cy11 (N-CH3) wB97X Excited State Calculations, Methyl Substituent, CPCM (Methanol) Solvent	55**](##46:-cy11-\(n-ch3\)-wb97x-excited-state-calculations,-methyl-substituent,-cpcm-\(methanol\)-solvent)
-
-[**\#47: Cy11 (N-CH3) PBE0 Excited State Calculations, Methyl Substituent, CPCM (Methanol) Solvent	56**](##47:-cy11-\(n-ch3\)-pbe0-excited-state-calculations,-methyl-substituent,-cpcm-\(methanol\)-solvent)
-
-[**\#48: Cy11 (N-CH3) M062X Excited State Calculations, Methyl Substituent, CPCM (Methanol) Solvent	57**](##48:-cy11-\(n-ch3\)-m062x-excited-state-calculations,-methyl-substituent,-cpcm-\(methanol\)-solvent)
-
-[**\#49: Cy11 (N-CH3) BLYP Excited State Calculations, Methyl Substituent, CPCM (Methanol) Solvent	58**](##49:-cy11-\(n-ch3\)-blyp-excited-state-calculations,-methyl-substituent,-cpcm-\(methanol\)-solvent)
-
-## Few Remarks: {#few-remarks:}
-
-In the above table of contents, only the bolded sections were referenced in the main paper. 
+Only the bolded sections were referenced in the main paper. 
 
 Section \#1: Unused due to having used an incorrect structure that lacked substituents and gem-dimethyls, and lacked a CPCM. 
 
@@ -146,15 +24,10 @@ Section \#8: Unused in favor of Section \#10 due to an incorrectly optimized fin
 
 **Section \#10: Main computation used for the Cy11 series.**
 
-## 
 
-## 
+## 1 \- Cy3 (Simple):
 
-## 
-
-## 1 \- Cy3 (Simple): {#1---cy3-(simple):}
-
-### **\#1: Cy3 (N-H) B3LYP Excited State Calculations, No Gem-Dimethyls, No Substituents, Default Gas-Phase State** {##1:-cy3-(n-h)-b3lyp-excited-state-calculations,-no-gem-dimethyls,-no-substituents,-default-gas-phase-state}
+### **\#1: Cy3 (N-H) B3LYP Excited State Calculations, No Gem-Dimethyls, No Substituents, Default Gas-Phase State** 
 
 **Base Folder:** 1-cy3-simple/cy3-1
 
@@ -228,7 +101,7 @@ end
 
 ### 
 
-### **\#2: Cy3 (N-H) B3LYP Excited State Calculations, No Gem-Dimethyls, No Substituents, CPCM (Water) Solvent** {##2:-cy3-(n-h)-b3lyp-excited-state-calculations,-no-gem-dimethyls,-no-substituents,-cpcm-(water)-solvent}
+### **\#2: Cy3 (N-H) B3LYP Excited State Calculations, No Gem-Dimethyls, No Substituents, CPCM (Water) Solvent** 
 
 **Base Folder:** 1-cy3-simple/cy3-2-CPCM
 
@@ -251,7 +124,7 @@ end
 
 2.634334 eV, 470.6 nm
 
-### **\#3: Cy3 (N-H) G3LYP Excited State Calculations, No Gem-Dimethyls, No Substituents, CPCM (Water) Solvent** {##3:-cy3-(n-h)-g3lyp-excited-state-calculations,-no-gem-dimethyls,-no-substituents,-cpcm-(water)-solvent}
+### **\#3: Cy3 (N-H) G3LYP Excited State Calculations, No Gem-Dimethyls, No Substituents, CPCM (Water) Solvent** 
 
 **Base Folder:** 1-cy3-simple/cy3-3-G3LYP
 
@@ -274,7 +147,7 @@ end
 
 	2.640586 eV, 469.5 nm
 
-### **\#4: Cy3 (N-H) O3LYP Excited State Calculations, No Gem-Dimethyls, No Substituents, CPCM (Water) Solvent** {##4:-cy3-(n-h)-o3lyp-excited-state-calculations,-no-gem-dimethyls,-no-substituents,-cpcm-(water)-solvent}
+### **\#4: Cy3 (N-H) O3LYP Excited State Calculations, No Gem-Dimethyls, No Substituents, CPCM (Water) Solvent** 
 
 **Base Folder:** 1-cy3-simple/cy3-4-O3LYP
 
@@ -299,9 +172,9 @@ end
 
 ## 
 
-## 2 \- Cy3 (Methyl Substituents, CPCM Water): {#2---cy3-(methyl-substituents,-cpcm-water):}
+## 2 \- Cy3 (Methyl Substituents, CPCM Water): 
 
-### **\#5: Cy3 (N-CH3) B3LYP Excited State Calculations, Methyl Substituent, CPCM (Water) Solvent** {##5:-cy3-(n-ch3)-b3lyp-excited-state-calculations,-methyl-substituent,-cpcm-(water)-solvent}
+### **\#5: Cy3 (N-CH3) B3LYP Excited State Calculations, Methyl Substituent, CPCM (Water) Solvent** 
 
 Recognized error with prior model of Cy3 (missing methyl substituents, missing gem-dimethyl groups). Reoptimized models for greater accuracy to real models, as found in the supplementary information from [this paper.](https://pubs.acs.org/jpcafh/article-abstract/125/36/7852/599033/Accurate-Modeling-of-Excitonic-Coupling-in-Cyanine?redirectedFrom=fulltext) Also added CPCM to the input during optimization.
 
@@ -398,7 +271,7 @@ end
 
 	2.604034 eV, 476.1 nm
 
-### **\#6: Cy3 (N-CH3) wB97X Excited State Calculations, Methyl Substituent, CPCM (Water) Solvent** {##6:-cy3-(n-ch3)-wb97x-excited-state-calculations,-methyl-substituent,-cpcm-(water)-solvent}
+### **\#6: Cy3 (N-CH3) wB97X Excited State Calculations, Methyl Substituent, CPCM (Water) Solvent** 
 
 **Base Folder:** 2-cy3-met-water/cy3-6-wB97X
 
@@ -421,7 +294,7 @@ end
 
 	2.807925 eV, 441.6 nm
 
-### **\#7: Cy3 (N-CH3) PBE0 Excited State Calculations, Methyl Substituent, CPCM (Water) Solvent** {##7:-cy3-(n-ch3)-pbe0-excited-state-calculations,-methyl-substituent,-cpcm-(water)-solvent}
+### **\#7: Cy3 (N-CH3) PBE0 Excited State Calculations, Methyl Substituent, CPCM (Water) Solvent** 
 
 **Base Folder:** 2-cy3-met-water/cy3-7-PBE0
 
@@ -444,7 +317,7 @@ end
 
 	2.653347 eV, 467.3 nm
 
-### **\#8: Cy3 (N-CH3) M062X Excited State Calculations, Methyl Substituent, CPCM (Water) Solvent** {##8:-cy3-(n-ch3)-m062x-excited-state-calculations,-methyl-substituent,-cpcm-(water)-solvent}
+### **\#8: Cy3 (N-CH3) M062X Excited State Calculations, Methyl Substituent, CPCM (Water) Solvent** 
 
 **Base Folder:** 2-cy3-met-water/cy3-8-M062X
 
@@ -467,7 +340,7 @@ end
 
 	2.714647 eV, 456.7 nm
 
-### **\#9: Cy3 (N-CH3) BLYP Excited State Calculations, Methyl Substituent, CPCM (Water) Solvent** {##9:-cy3-(n-ch3)-blyp-excited-state-calculations,-methyl-substituent,-cpcm-(water)-solvent}
+### **\#9: Cy3 (N-CH3) BLYP Excited State Calculations, Methyl Substituent, CPCM (Water) Solvent** 
 
 **Base Folder:** 2-cy3-met-water/cy3-9-BLYP
 
@@ -492,7 +365,7 @@ end
 
 ## 3 \- Cy3 (Methyl Substituents, CPCM Methanol): {#3---cy3-(methyl-substituents,-cpcm-methanol):}
 
-### **\#10: Cy3 (N-CH3) B3LYP Excited State Calculations, Methyl Substituent, CPCM (Methanol) Solvent** {##10:-cy3-(n-ch3)-b3lyp-excited-state-calculations,-methyl-substituent,-cpcm-(methanol)-solvent}
+### **\#10: Cy3 (N-CH3) B3LYP Excited State Calculations, Methyl Substituent, CPCM (Methanol) Solvent** 
 
 Reoptimized molecule from \#5 using CPCM (methanol).
 
@@ -584,7 +457,7 @@ end
 
 2.603681 eV, 476.2 nm
 
-### **\#11: Cy3 (N-CH3) wB97X Excited State Calculations, Methyl Substituent, CPCM (Methanol) Solvent** {##11:-cy3-(n-ch3)-wb97x-excited-state-calculations,-methyl-substituent,-cpcm-(methanol)-solvent}
+### **\#11: Cy3 (N-CH3) wB97X Excited State Calculations, Methyl Substituent, CPCM (Methanol) Solvent** 
 
 **Base Folder:** 3-cy3-met-methanol/cy3-11-wB97X
 
@@ -607,7 +480,7 @@ end
 
 2.808477 eV, 441.5 nm
 
-### **\#12: Cy3 (N-CH3) PBE0 Excited State Calculations, Methyl Substituent, CPCM (Methanol) Solvent** {##12:-cy3-(n-ch3)-pbe0-excited-state-calculations,-methyl-substituent,-cpcm-(methanol)-solvent}
+### **\#12: Cy3 (N-CH3) PBE0 Excited State Calculations, Methyl Substituent, CPCM (Methanol) Solvent** 
 
 **Base Folder:** 3-cy3-met-methanol/cy3-12-PBE0
 
@@ -630,7 +503,7 @@ end
 
 2.653139 eV, 467.3 nm
 
-### **\#13: Cy3 (N-CH3) M062X Excited State Calculations, Methyl Substituent, CPCM (Methanol) Solvent** {##13:-cy3-(n-ch3)-m062x-excited-state-calculations,-methyl-substituent,-cpcm-(methanol)-solvent}
+### **\#13: Cy3 (N-CH3) M062X Excited State Calculations, Methyl Substituent, CPCM (Methanol) Solvent** 
 
 **Base Folder:** 3-cy3-met-methanol/cy3-13-M062X
 
@@ -653,7 +526,7 @@ end
 
 2.715083 eV, 456.6 nm
 
-### **\#14: Cy3 (N-CH3) BLYP Excited State Calculations, Methyl Substituent, CPCM (Methanol) Solvent** {##14:-cy3-(n-ch3)-blyp-excited-state-calculations,-methyl-substituent,-cpcm-(methanol)-solvent}
+### **\#14: Cy3 (N-CH3) BLYP Excited State Calculations, Methyl Substituent, CPCM (Methanol) Solvent** 
 
 **Base Folder:** 3-cy3-met-methanol/cy3-14-BLYP
 
@@ -676,9 +549,9 @@ end
 
 2.715083 eV, 456.6 nm
 
-## 4 \- Cy5 (Methyl Substituents, Optimized with CPCM Water and Excitation States Calculated with CPCM Methanol): {#4---cy5-(methyl-substituents,-optimized-with-cpcm-water-and-excitation-states-calculated-with-cpcm-methanol):}
+## 4 \- Cy5 (Methyl Substituents, Optimized with CPCM Water and Excitation States Calculated with CPCM Methanol): 
 
-### **\#15: Cy5 (N-CH3) B3LYP Excited State Calculations, Methyl Substituent, CPCM (Methanol) Solvent** {##15:-cy5-(n-ch3)-b3lyp-excited-state-calculations,-methyl-substituent,-cpcm-(methanol)-solvent}
+### **\#15: Cy5 (N-CH3) B3LYP Excited State Calculations, Methyl Substituent, CPCM (Methanol) Solvent** 
 
 Note that the initial optimization was done under CPCM (Water).
 
@@ -774,7 +647,7 @@ end
 
 2.314975 eV, 535.6 nm
 
-### **\#16: Cy5 (N-CH3) wB97X Excited State Calculations, Methyl Substituent, CPCM (Methanol) Solvent** {##16:-cy5-(n-ch3)-wb97x-excited-state-calculations,-methyl-substituent,-cpcm-(methanol)-solvent}
+### **\#16: Cy5 (N-CH3) wB97X Excited State Calculations, Methyl Substituent, CPCM (Methanol) Solvent** 
 
 Note that the initial optimization was done under CPCM (Water).
 
@@ -803,7 +676,7 @@ end
 
 ### 
 
-### **\#17: Cy5 (N-CH3) PBE0 Excited State Calculations, Methyl Substituent, CPCM (Methanol) Solvent** {##17:-cy5-(n-ch3)-pbe0-excited-state-calculations,-methyl-substituent,-cpcm-(methanol)-solvent}
+### **\#17: Cy5 (N-CH3) PBE0 Excited State Calculations, Methyl Substituent, CPCM (Methanol) Solvent** 
 
 Note that the initial optimization was done under CPCM (Water).
 
@@ -828,7 +701,7 @@ end
 
 2.349591 eV, 527.7 nm
 
-### **\#18: Cy5 (N-CH3) M062X Excited State Calculations, Methyl Substituent, CPCM (Methanol) Solvent** {##18:-cy5-(n-ch3)-m062x-excited-state-calculations,-methyl-substituent,-cpcm-(methanol)-solvent}
+### **\#18: Cy5 (N-CH3) M062X Excited State Calculations, Methyl Substituent, CPCM (Methanol) Solvent** 
 
 Note that the initial optimization was done under CPCM (Water).
 
@@ -853,7 +726,7 @@ end
 
 2.360780 eV, 525.2 nm
 
-### **\#19: Cy5 (N-CH3) BLYP Excited State Calculations, Methyl Substituent, CPCM (Methanol) Solvent** {##19:-cy5-(n-ch3)-blyp-excited-state-calculations,-methyl-substituent,-cpcm-(methanol)-solvent}
+### **\#19: Cy5 (N-CH3) BLYP Excited State Calculations, Methyl Substituent, CPCM (Methanol) Solvent** 
 
 Note that the initial optimization was done under CPCM (Water).
 
@@ -878,9 +751,9 @@ end
 
 2.174535 eV, 570.2 nm
 
-## 5 \- Cy7 (Methyl Substituents, Optimized with CPCM Water and Excitation States Calculated with CPCM Methanol): {#5---cy7-(methyl-substituents,-optimized-with-cpcm-water-and-excitation-states-calculated-with-cpcm-methanol):}
+## 5 \- Cy7 (Methyl Substituents, Optimized with CPCM Water and Excitation States Calculated with CPCM Methanol): 
 
-### **\#20: Cy7 (N-CH3) B3LYP Excited State Calculations, Methyl Substituent, CPCM (Methanol) Solvent** {##20:-cy7-(n-ch3)-b3lyp-excited-state-calculations,-methyl-substituent,-cpcm-(methanol)-solvent}
+### **\#20: Cy7 (N-CH3) B3LYP Excited State Calculations, Methyl Substituent, CPCM (Methanol) Solvent** 
 
 Note that the initial optimization was done under CPCM (Water).  
 **Base Folder:** 5-cy7-met/cy7-20-B3LYP
@@ -979,7 +852,7 @@ end
 
 2.075507 eV, 597.4 nm
 
-### **\#21: Cy7 (N-CH3) wB97X Excited State Calculations, Methyl Substituent, CPCM (Methanol) Solvent** {##21:-cy7-(n-ch3)-wb97x-excited-state-calculations,-methyl-substituent,-cpcm-(methanol)-solvent}
+### **\#21: Cy7 (N-CH3) wB97X Excited State Calculations, Methyl Substituent, CPCM (Methanol) Solvent** 
 
 Note that the initial optimization was done under CPCM (Water).
 
@@ -1006,7 +879,7 @@ end
 
 ### 
 
-### **\#22: Cy7 (N-CH3) PBE0 Excited State Calculations, Methyl Substituent, CPCM (Methanol) Solvent** {##22:-cy7-(n-ch3)-pbe0-excited-state-calculations,-methyl-substituent,-cpcm-(methanol)-solvent}
+### **\#22: Cy7 (N-CH3) PBE0 Excited State Calculations, Methyl Substituent, CPCM (Methanol) Solvent** 
 
 Note that the initial optimization was done under CPCM (Water).
 
@@ -1031,7 +904,7 @@ end
 
 2.100897 eV, 590.1 nm
 
-### **\#23: Cy7 (N-CH3) M062X Excited State Calculations, Methyl Substituent, CPCM (Methanol) Solvent** {##23:-cy7-(n-ch3)-m062x-excited-state-calculations,-methyl-substituent,-cpcm-(methanol)-solvent}
+### **\#23: Cy7 (N-CH3) M062X Excited State Calculations, Methyl Substituent, CPCM (Methanol) Solvent** 
 
 Note that the initial optimization was done under CPCM (Water).
 
@@ -1056,7 +929,7 @@ end
 
 2.077926 eV, 596.7 nm
 
-### **\#24: Cy7 (N-CH3) BLYP Excited State Calculations, Methyl Substituent, CPCM (Methanol) Solvent** {##24:-cy7-(n-ch3)-blyp-excited-state-calculations,-methyl-substituent,-cpcm-(methanol)-solvent}
+### **\#24: Cy7 (N-CH3) BLYP Excited State Calculations, Methyl Substituent, CPCM (Methanol) Solvent** 
 
 Note that the initial optimization was done under CPCM (Water).
 
@@ -1081,9 +954,9 @@ end
 
 1.968389 eV, 629.9 nm
 
-## 6 \- Cy3 (Methyl Substituents, Optimized with CPCM Water and Excitation States Calculated with CPCM Methanol): {#6---cy3-(methyl-substituents,-optimized-with-cpcm-water-and-excitation-states-calculated-with-cpcm-methanol):}
+## 6 \- Cy3 (Methyl Substituents, Optimized with CPCM Water and Excitation States Calculated with CPCM Methanol): 
 
-### **\#25: Cy3 (N-CH3) B3LYP Excited State Calculations, Methyl Substituent, CPCM (Water) Opt \+ CPCM (Methanol) Solvent** {##25:-cy3-(n-ch3)-b3lyp-excited-state-calculations,-methyl-substituent,-cpcm-(water)-opt-+-cpcm-(methanol)-solvent}
+### **\#25: Cy3 (N-CH3) B3LYP Excited State Calculations, Methyl Substituent, CPCM (Water) Opt \+ CPCM (Methanol) Solvent** 
 
 **Base Folder:** 6-cy3-met-optw-calcm/cy3-25-B3LYP
 
@@ -1106,7 +979,7 @@ end
 
 2.603355 eV, 476.2 nm
 
-### **\#26: Cy3 (N-CH3) wB97X Excited State Calculations, Methyl Substituent, CPCM (Water) Opt \+ CPCM (Methanol) Solvent** {##26:-cy3-(n-ch3)-wb97x-excited-state-calculations,-methyl-substituent,-cpcm-(water)-opt-+-cpcm-(methanol)-solvent}
+### **\#26: Cy3 (N-CH3) wB97X Excited State Calculations, Methyl Substituent, CPCM (Water) Opt \+ CPCM (Methanol) Solvent** 
 
 **Base Folder:** 6-cy3-met-optw-calcm/cy3-26-wB97X
 
@@ -1129,7 +1002,7 @@ end
 
 2.808477 eV, 441.5 nm
 
-### **\#27: Cy3 (N-CH3) PBE0 Excited State Calculations, Methyl Substituent, CPCM (Water) Opt \+ CPCM (Methanol) Solvent** {##27:-cy3-(n-ch3)-pbe0-excited-state-calculations,-methyl-substituent,-cpcm-(water)-opt-+-cpcm-(methanol)-solvent}
+### **\#27: Cy3 (N-CH3) PBE0 Excited State Calculations, Methyl Substituent, CPCM (Water) Opt \+ CPCM (Methanol) Solvent** 
 
 **Base Folder:** 6-cy3-met-optw-calcm/cy3-27-PBE0
 
@@ -1152,7 +1025,7 @@ end
 
 2.653139 eV, 467.3 nm
 
-### **\#28: Cy3 (N-CH3) M062X Excited State Calculations, Methyl Substituent, CPCM (Water) Opt \+ CPCM (Methanol) Solvent** {##28:-cy3-(n-ch3)-m062x-excited-state-calculations,-methyl-substituent,-cpcm-(water)-opt-+-cpcm-(methanol)-solvent}
+### **\#28: Cy3 (N-CH3) M062X Excited State Calculations, Methyl Substituent, CPCM (Water) Opt \+ CPCM (Methanol) Solvent** 
 
 **Base Folder:** 6-cy3-met-optw-calcm/cy3-28-M062X
 
@@ -1175,7 +1048,7 @@ end
 
 2.715083 eV, 456.6 nm
 
-### **\#29: Cy3 (N-CH3) BLYP Excited State Calculations, Methyl Substituent, CPCM (Water) Opt \+ CPCM (Methanol) Solvent** {##29:-cy3-(n-ch3)-blyp-excited-state-calculations,-methyl-substituent,-cpcm-(water)-opt-+-cpcm-(methanol)-solvent}
+### **\#29: Cy3 (N-CH3) BLYP Excited State Calculations, Methyl Substituent, CPCM (Water) Opt \+ CPCM (Methanol) Solvent** 
 
 **Base Folder:** 6-cy3-met-optw-calcm/cy3-29-BLYP
 
@@ -1198,9 +1071,9 @@ end
 
 2.715083 eV, 456.6 nm
 
-## 7 \- Cy9 (Methyl Substituents, Optimized with CPCM Water and Excitation States Calculated with CPCM Methanol): {#7---cy9-(methyl-substituents,-optimized-with-cpcm-water-and-excitation-states-calculated-with-cpcm-methanol):}
+## 7 \- Cy9 (Methyl Substituents, Optimized with CPCM Water and Excitation States Calculated with CPCM Methanol): 
 
-### **\#30: Cy9 (N-CH3) B3LYP Excited State Calculations, Methyl Substituent, CPCM (Methanol) Solvent** {##30:-cy9-(n-ch3)-b3lyp-excited-state-calculations,-methyl-substituent,-cpcm-(methanol)-solvent}
+### **\#30: Cy9 (N-CH3) B3LYP Excited State Calculations, Methyl Substituent, CPCM (Methanol) Solvent** 
 
 Note that the initial optimization was done under CPCM (Water).
 
@@ -1306,7 +1179,7 @@ end
 
 1.841415 eV, 673.3 nm
 
-### **\#31: Cy9 (N-CH3) wB97X Excited State Calculations, Methyl Substituent, CPCM (Methanol) Solvent** {##31:-cy9-(n-ch3)-wb97x-excited-state-calculations,-methyl-substituent,-cpcm-(methanol)-solvent}
+### **\#31: Cy9 (N-CH3) wB97X Excited State Calculations, Methyl Substituent, CPCM (Methanol) Solvent** 
 
 Note that the initial optimization was done under CPCM (Water).
 
@@ -1331,7 +1204,7 @@ end
 
 1.828652 eV, 678.0 nm
 
-### **\#32: Cy9 (N-CH3) PBE0 Excited State Calculations, Methyl Substituent, CPCM (Methanol) Solvent** {##32:-cy9-(n-ch3)-pbe0-excited-state-calculations,-methyl-substituent,-cpcm-(methanol)-solvent}
+### **\#32: Cy9 (N-CH3) PBE0 Excited State Calculations, Methyl Substituent, CPCM (Methanol) Solvent** 
 
 Note that the initial optimization was done under CPCM (Water).
 
@@ -1356,7 +1229,7 @@ end
 
 1.861387 eV, 666.1 nm
 
-### **\#33: Cy9 (N-CH3) M062X Excited State Calculations, Methyl Substituent, CPCM (Methanol) Solvent** {##33:-cy9-(n-ch3)-m062x-excited-state-calculations,-methyl-substituent,-cpcm-(methanol)-solvent}
+### **\#33: Cy9 (N-CH3) M062X Excited State Calculations, Methyl Substituent, CPCM (Methanol) Solvent** 
 
 Note that the initial optimization was done under CPCM (Water).
 
@@ -1381,7 +1254,7 @@ end
 
 1.808542 eV, 685.5 nm
 
-### **\#34: Cy9 (N-CH3) BLYP Excited State Calculations, Methyl Substituent, CPCM (Methanol) Solvent** {##34:-cy9-(n-ch3)-blyp-excited-state-calculations,-methyl-substituent,-cpcm-(methanol)-solvent}
+### **\#34: Cy9 (N-CH3) BLYP Excited State Calculations, Methyl Substituent, CPCM (Methanol) Solvent** 
 
 Note that the initial optimization was done under CPCM (Water).
 
@@ -1406,9 +1279,9 @@ end
 
 1.758377 eV, 705.1 nm
 
-## 8 \- Cy11 (Methyl Substituents, Optimized with CPCM Water and Excitation States Calculated with CPCM Methanol): {#8---cy11-(methyl-substituents,-optimized-with-cpcm-water-and-excitation-states-calculated-with-cpcm-methanol):}
+## 8 \- Cy11 (Methyl Substituents, Optimized with CPCM Water and Excitation States Calculated with CPCM Methanol): 
 
-### **\#35: Cy11 (N-CH3) B3LYP Excited State Calculations, Methyl Substituent, CPCM (Methanol) Solvent** {##35:-cy11-(n-ch3)-b3lyp-excited-state-calculations,-methyl-substituent,-cpcm-(methanol)-solvent}
+### **\#35: Cy11 (N-CH3) B3LYP Excited State Calculations, Methyl Substituent, CPCM (Methanol) Solvent** 
 
 Note that the initial optimization was done under CPCM (Water).
 
@@ -1516,7 +1389,7 @@ end
 
 1.649679 eV, 751.6 nm
 
-### **\#36: Cy11 (N-CH3) wB97X Excited State Calculations, Methyl Substituent, CPCM (Methanol) Solvent** {##36:-cy11-(n-ch3)-wb97x-excited-state-calculations,-methyl-substituent,-cpcm-(methanol)-solvent}
+### **\#36: Cy11 (N-CH3) wB97X Excited State Calculations, Methyl Substituent, CPCM (Methanol) Solvent** 
 
 Note that the initial optimization was done under CPCM (Water).
 
@@ -1541,7 +1414,7 @@ end
 
 1.655719 eV, 748.8 nm
 
-### **\#37: Cy11 (N-CH3) PBE0 Excited State Calculations, Methyl Substituent, CPCM (Methanol) Solvent** {##37:-cy11-(n-ch3)-pbe0-excited-state-calculations,-methyl-substituent,-cpcm-(methanol)-solvent}
+### **\#37: Cy11 (N-CH3) PBE0 Excited State Calculations, Methyl Substituent, CPCM (Methanol) Solvent** 
 
 Note that the initial optimization was done under CPCM (Water).
 
@@ -1566,7 +1439,7 @@ end
 
 1.668167 eV, 743.2 nm
 
-### **\#38: Cy11 (N-CH3) M062X Excited State Calculations, Methyl Substituent, CPCM (Methanol) Solvent** {##38:-cy11-(n-ch3)-m062x-excited-state-calculations,-methyl-substituent,-cpcm-(methanol)-solvent}
+### **\#38: Cy11 (N-CH3) M062X Excited State Calculations, Methyl Substituent, CPCM (Methanol) Solvent** 
 
 Note that the initial optimization was done under CPCM (Water).
 
@@ -1591,7 +1464,7 @@ end
 
 1.629251 eV, 761.0 nm
 
-### **\#39: Cy11 (N-CH3) BLYP Excited State Calculations, Methyl Substituent, CPCM (Methanol) Solvent** {##39:-cy11-(n-ch3)-blyp-excited-state-calculations,-methyl-substituent,-cpcm-(methanol)-solvent}
+### **\#39: Cy11 (N-CH3) BLYP Excited State Calculations, Methyl Substituent, CPCM (Methanol) Solvent** 
 
 Note that the initial optimization was done under CPCM (Water).
 
@@ -1616,9 +1489,9 @@ end
 
 1.569247 eV, 790.1 nm
 
-## 9 \- Cy9 REDO (Methyl Substituents, Optimized with CPCM Water and Excitation States Calculated with CPCM Methanol, ALL-TRANS): {#9---cy9-redo-(methyl-substituents,-optimized-with-cpcm-water-and-excitation-states-calculated-with-cpcm-methanol,-all-trans):}
+## 9 \- Cy9 REDO (Methyl Substituents, Optimized with CPCM Water and Excitation States Calculated with CPCM Methanol, ALL-TRANS): 
 
-### **\#40: Cy9 (N-CH3) B3LYP Excited State Calculations, Methyl Substituent, CPCM (Methanol) Solvent** {##40:-cy9-(n-ch3)-b3lyp-excited-state-calculations,-methyl-substituent,-cpcm-(methanol)-solvent}
+### **\#40: Cy9 (N-CH3) B3LYP Excited State Calculations, Methyl Substituent, CPCM (Methanol) Solvent** 
 
 There was a mistake in the original geometry optimization, and not all of the carbon connections were trans.   
 Note that the initial optimization was done under CPCM (Water).
@@ -1723,7 +1596,7 @@ end
 
 1.881541 eV, 659.04 nm
 
-### **\#41: Cy9 (N-CH3) wB97X Excited State Calculations, Methyl Substituent, CPCM (Methanol) Solvent** {##41:-cy9-(n-ch3)-wb97x-excited-state-calculations,-methyl-substituent,-cpcm-(methanol)-solvent}
+### **\#41: Cy9 (N-CH3) wB97X Excited State Calculations, Methyl Substituent, CPCM (Methanol) Solvent** 
 
 Note that the initial optimization was done under CPCM (Water).
 
@@ -1748,7 +1621,7 @@ end
 
 1.865853 eV, 664.5 nm
 
-### **\#42: Cy9 (N-CH3) PBE0 Excited State Calculations, Methyl Substituent, CPCM (Methanol) Solvent** {##42:-cy9-(n-ch3)-pbe0-excited-state-calculations,-methyl-substituent,-cpcm-(methanol)-solvent}
+### **\#42: Cy9 (N-CH3) PBE0 Excited State Calculations, Methyl Substituent, CPCM (Methanol) Solvent** 
 
 Note that the initial optimization was done under CPCM (Water).
 
@@ -1773,7 +1646,7 @@ end
 
 1.900819 eV, 652.1 nm
 
-### **\#43: Cy9 (N-CH3) M062X Excited State Calculations, Methyl Substituent, CPCM (Methanol) Solvent** {##43:-cy9-(n-ch3)-m062x-excited-state-calculations,-methyl-substituent,-cpcm-(methanol)-solvent}
+### **\#43: Cy9 (N-CH3) M062X Excited State Calculations, Methyl Substituent, CPCM (Methanol) Solvent** 
 
 Note that the initial optimization was done under CPCM (Water).
 
@@ -1798,7 +1671,7 @@ end
 
 1.859239 eV, 666.9 nm
 
-### **\#44: Cy9 (N-CH3) BLYP Excited State Calculations, Methyl Substituent, CPCM (Methanol) Solvent** {##44:-cy9-(n-ch3)-blyp-excited-state-calculations,-methyl-substituent,-cpcm-(methanol)-solvent}
+### **\#44: Cy9 (N-CH3) BLYP Excited State Calculations, Methyl Substituent, CPCM (Methanol) Solvent** 
 
 Note that the initial optimization was done under CPCM (Water).
 
@@ -1823,9 +1696,9 @@ end
 
 1.797927 eV, 689.6 nm
 
-## 10 \- Cy11 REDO (Methyl Substituents, Optimized with CPCM Water and Excitation States Calculated with CPCM Methanol, ALL-TRANS): {#10---cy11-redo-(methyl-substituents,-optimized-with-cpcm-water-and-excitation-states-calculated-with-cpcm-methanol,-all-trans):}
+## 10 \- Cy11 REDO (Methyl Substituents, Optimized with CPCM Water and Excitation States Calculated with CPCM Methanol, ALL-TRANS): 
 
-### **\#45: Cy11 (N-CH3) B3LYP Excited State Calculations, Methyl Substituent, CPCM (Methanol) Solvent** {##45:-cy11-(n-ch3)-b3lyp-excited-state-calculations,-methyl-substituent,-cpcm-(methanol)-solvent}
+### **\#45: Cy11 (N-CH3) B3LYP Excited State Calculations, Methyl Substituent, CPCM (Methanol) Solvent** 
 
 There was a mistake in the original geometry optimization, and not all of the carbon connections were trans. 
 
@@ -1933,7 +1806,7 @@ end
 
 1.726409 eV, 718.2 nm
 
-### **\#46: Cy11 (N-CH3) wB97X Excited State Calculations, Methyl Substituent, CPCM (Methanol) Solvent** {##46:-cy11-(n-ch3)-wb97x-excited-state-calculations,-methyl-substituent,-cpcm-(methanol)-solvent}
+### **\#46: Cy11 (N-CH3) wB97X Excited State Calculations, Methyl Substituent, CPCM (Methanol) Solvent** 
 
 Note that the initial optimization was done under CPCM (Water).
 
@@ -1958,7 +1831,7 @@ end
 
 1.676934 eV, 739.4 nm
 
-### **\#47: Cy11 (N-CH3) PBE0 Excited State Calculations, Methyl Substituent, CPCM (Methanol) Solvent** {##47:-cy11-(n-ch3)-pbe0-excited-state-calculations,-methyl-substituent,-cpcm-(methanol)-solvent}
+### **\#47: Cy11 (N-CH3) PBE0 Excited State Calculations, Methyl Substituent, CPCM (Methanol) Solvent** 
 
 Note that the initial optimization was done under CPCM (Water).
 
@@ -1983,7 +1856,7 @@ end
 
 1.741571 eV, 711.9 nm
 
-### **\#48: Cy11 (N-CH3) M062X Excited State Calculations, Methyl Substituent, CPCM (Methanol) Solvent** {##48:-cy11-(n-ch3)-m062x-excited-state-calculations,-methyl-substituent,-cpcm-(methanol)-solvent}
+### **\#48: Cy11 (N-CH3) M062X Excited State Calculations, Methyl Substituent, CPCM (Methanol) Solvent** 
 
 Note that the initial optimization was done under CPCM (Water).
 
@@ -2008,7 +1881,7 @@ end
 
 1.682565 eV, 736.9 nm
 
-### **\#49: Cy11 (N-CH3) BLYP Excited State Calculations, Methyl Substituent, CPCM (Methanol) Solvent** {##49:-cy11-(n-ch3)-blyp-excited-state-calculations,-methyl-substituent,-cpcm-(methanol)-solvent}
+### **\#49: Cy11 (N-CH3) BLYP Excited State Calculations, Methyl Substituent, CPCM (Methanol) Solvent** 
 
 Note that the initial optimization was done under CPCM (Water).
 
