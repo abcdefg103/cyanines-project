@@ -13,7 +13,7 @@ Here is a short description of each computational set, and why they were (or wer
  - **Set #3:** Unused in favor of Section #6 due to changing to a CPCM water solvation model for geometrical optimization.
  - **Set #4: Main computation used for the Cy5 series.**
  - **Set #5: Main computation used for the Cy7 series.**
- - **Set #t6: Main computation used for the Cy3 series.**
+ - **Set #6: Main computation used for the Cy3 series.**
  - **Set #7:** Unused in favor of Section #9 due to an incorrectly optimized final model that included cis transfigurations in the central carbon chain.
  - **Set #8:** Unused in favor of Section #10 due to an incorrectly optimized final model that included cis transfigurations in the central carbon chain.
  - **Set #9: Main computation used for the Cy9 series.**
