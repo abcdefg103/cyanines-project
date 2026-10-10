@@ -1069,7 +1069,7 @@ end
 
 ![][image16]
 
-2.715083 eV, 456.6 nm
+2.413025 eV, 513.8 nm
 
 ## 7 \- Cy9 (Methyl Substituents, Optimized with CPCM Water and Excitation States Calculated with CPCM Methanol): 
 
@@ -1594,7 +1594,7 @@ end
 
 ![][image38]
 
-1.881541 eV, 659.04 nm
+1.881541 eV, 659.0 nm
 
 ### **\#41: Cy9 (N-CH3) wB97X Excited State Calculations, Methyl Substituent, CPCM (Methanol) Solvent** 
 
@@ -1644,7 +1644,7 @@ end
 
 ![][image40]
 
-1.900819 eV, 652.1 nm
+1.900819 eV, 652.3 nm
 
 ### **\#43: Cy9 (N-CH3) M062X Excited State Calculations, Methyl Substituent, CPCM (Methanol) Solvent** 
 
