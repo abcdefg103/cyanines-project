@@ -2,7 +2,7 @@
 
 This is the central GitHub repository for Inhoo Chang's computational chemistry research project on the excitations of cyanines.
 
-In total, 49 calculations were performed in 10 sets, of which only 25 were mainly used within the paper (5 for each molecule, 1 for each functional). The other 24 were initial calculations that were later re-performed due to a mistake within the calculation process. Some of these mistakes were an incorrect CPCM model, an incorrectly modeled molecule, and an error during optimization. Additional details on each of these 49 calculations can be found within the file `computations.md`.
+In total, 49 calculations were performed in 10 sets, of which only 25 were mainly used in the paper (5 for each molecule, 1 for each functional). The other 24 were initial calculations that were later re-performed due to a mistake in the calculation process. Some of these mistakes involved an incorrect CPCM model, an incorrectly modeled molecule, and an error during optimization. Additional details on each of these 49 calculations can be found within the file `computations.md`.
 
 Here is a short description of each computational set, and why they were (or weren't) chosen to be included in the final paper. 
 
